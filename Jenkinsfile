@@ -10,7 +10,7 @@ pipeline {
     stage('Checkout') {
       steps {
         git(
-          url: 'git@github.com:likhitha050/py_app.git',
+          url: 'https://github.com/likhitha050/py_app.git',
           branch: 'main',
           credentialsId: 'dockerID'
         )
