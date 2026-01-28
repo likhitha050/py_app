@@ -1,4 +1,6 @@
 flask
+sudo nano /etc/modprobe.d/blacklist-kvm.conf
+sudo update-initramfs -u
 Vagrant.configure("2") do |config|
 config.vm.box = "ubuntu/jammy64"# Swarm Manager
 config.vm.define "manager-vm" do |manager|
